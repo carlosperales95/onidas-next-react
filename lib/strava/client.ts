@@ -95,8 +95,8 @@ export interface StravaTotals {
  * Generate the Strava OAuth authorization URL
  */
 export function getStravaAuthUrl(state: string): string {
-  const clientId = process.env.STRAVA_CLIENT_ID;
-  const redirectUri = process.env.NEXT_PUBLIC_STRAVA_REDIRECT_URI;
+  const clientId = process.env.NEXT_STRAVA_CLIENT_ID;
+  const redirectUri = process.env.NEXT_STRAVA_REDIRECT_URI;
   
   console.log('[v0] Strava config check - clientId:', clientId ? 'present' : 'missing');
   console.log('[v0] Strava config check - redirectUri:', redirectUri ? redirectUri : 'missing');
@@ -121,7 +121,7 @@ export function getStravaAuthUrl(state: string): string {
  * Exchange authorization code for access tokens
  */
 export async function exchangeCodeForTokens(code: string): Promise<StravaTokens> {
-  const clientId = process.env.STRAVA_CLIENT_ID;
+  const clientId = process.env.NEXT_STRAVA_CLIENT_ID;
   const clientSecret = process.env.STRAVA_CLIENT_SECRET;
 
   if (!clientId || !clientSecret) {
@@ -153,8 +153,8 @@ export async function exchangeCodeForTokens(code: string): Promise<StravaTokens>
  * Refresh expired access token
  */
 export async function refreshAccessToken(refreshToken: string): Promise<StravaTokens> {
-  const clientId = process.env.STRAVA_CLIENT_ID;
-  const clientSecret = process.env.STRAVA_CLIENT_SECRET;
+  const clientId = process.env.NEXT_STRAVA_CLIENT_ID;
+  const clientSecret = process.env.NEXT_STRAVA_CLIENT_SECRET;
 
   if (!clientId || !clientSecret) {
     throw new Error('Missing Strava configuration');

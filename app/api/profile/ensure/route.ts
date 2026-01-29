@@ -4,8 +4,8 @@ import { NextResponse } from "next/server"
 
 // Use service role client for creating profiles (bypasses RLS)
 function getServiceClient() {
-  const url = process.env.NEXT_PUBLIC_SUPABASE_URL
-  const key = process.env.SUPABASE_SERVICE_ROLE_KEY
+  const url = process.env.NEXT_SUPABASE_URL
+  const key = process.env.NEXT_SUPABASE_SERVICE_ROLE_KEY
   
   if (!url || !key) {
     throw new Error('Missing Supabase configuration')
