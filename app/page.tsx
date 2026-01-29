@@ -8,8 +8,6 @@ import { LanguageSelector } from "@/components/language-selector"
 
 export default function LandingPage() {
   const { t } = useTranslation()
-  
-  console.log("[v0] Landing page loaded - you are at the root route /")
 
   return (
     <div className="relative min-h-screen overflow-hidden">
