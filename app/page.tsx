@@ -15,8 +15,8 @@ export default function LandingPage() {
     <div className="relative min-h-screen overflow-hidden">
       {/* Animated gradient background */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-linear-to-br from-black via-slate-900 to-blue-950"></div>
-        <div className="absolute inset-0 bg-linear-to-tr from-orange-500/10 via-transparent to-blue-500/10 animate-pulse"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-black via-slate-900 to-blue-950"></div>
+        <div className="absolute inset-0 bg-gradient-to-tr from-orange-500/10 via-transparent to-blue-500/10 animate-pulse"></div>
         <div className="absolute inset-0" style={{
           backgroundImage: 'radial-gradient(circle at 2px 2px, rgba(255,255,255,0.05) 1px, transparent 0)',
           backgroundSize: '60px 60px'
@@ -29,7 +29,7 @@ export default function LandingPage() {
         </div>
 
         {/* Animated banner with text */}
-        <div className="relative overflow-hidden border-b border-white/10 backdrop-blur-md bg-linear-to-r from-orange-600/80 via-red-600/80 to-blue-600/80">
+        <div className="relative overflow-hidden border-b border-white/10 backdrop-blur-md bg-gradient-to-r from-orange-600/80 via-red-600/80 to-blue-600/80">
           <div className="flex animate-marquee whitespace-nowrap py-3">
             <span className="mx-8 text-sm font-bold text-white tracking-wider flex items-center gap-2">
               <TrendingUp className="h-4 w-4" /> TRAIN SMARTER
@@ -82,14 +82,14 @@ export default function LandingPage() {
                 </div>
               </div>
               <h1 className="text-5xl font-bebas tracking-wider text-white sm:text-7xl md:text-8xl drop-shadow-2xl uppercase">
-                <span className="block bg-linear-to-r from-white via-blue-100 to-orange-200 bg-clip-text text-transparent">{t.landing.hero.title}</span>
-                <span className="block text-transparent bg-linear-to-r from-orange-500 via-red-500 to-blue-500 bg-clip-text drop-shadow-2xl animate-pulse">{t.landing.hero.titleHighlight}</span>
+                <span className="block bg-gradient-to-r from-white via-blue-100 to-orange-200 bg-clip-text text-transparent">{t.landing.hero.title}</span>
+                <span className="block text-transparent bg-gradient-to-r from-orange-500 via-red-500 to-blue-500 bg-clip-text drop-shadow-2xl animate-pulse">{t.landing.hero.titleHighlight}</span>
               </h1>
               <p className="mx-auto mt-8 max-w-3xl text-2xl drop-shadow-xl text-slate-100 font-oswald tracking-wide leading-relaxed">{t.landing.hero.description}</p>
               <div className="mt-12 flex flex-wrap justify-center gap-6">
                 <SignedOut>
                   <SignUpButton mode="modal">
-                    <button className="group relative rounded-xl backdrop-blur-xl bg-linear-to-r from-orange-600 to-red-600 px-10 py-5 text-lg font-bebas tracking-widest text-white shadow-2xl hover:shadow-orange-500/50 border-2 border-orange-400/50 transition-all hover:scale-105 overflow-hidden">
+                    <button className="group relative rounded-xl backdrop-blur-xl bg-gradient-to-r from-orange-600 to-red-600 px-10 py-5 text-lg font-bebas tracking-widest text-white shadow-2xl hover:shadow-orange-500/50 border-2 border-orange-400/50 transition-all hover:scale-105 overflow-hidden">
                       <div className="absolute inset-0 bg-white/20 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
                       <span className="relative">{t.landing.hero.startTrial}</span>
                     </button>
@@ -102,7 +102,7 @@ export default function LandingPage() {
                 </SignedOut>
                 <SignedIn>
                   <Link href="/dashboard">
-                    <button className="group relative rounded-xl backdrop-blur-xl bg-linear-to-r from-orange-600 to-red-600 px-10 py-5 text-lg font-bebas tracking-widest text-white shadow-2xl hover:shadow-orange-500/50 border-2 border-orange-400/50 transition-all hover:scale-105 overflow-hidden">
+                    <button className="group relative rounded-xl backdrop-blur-xl bg-gradient-to-r from-orange-600 to-red-600 px-10 py-5 text-lg font-bebas tracking-widest text-white shadow-2xl hover:shadow-orange-500/50 border-2 border-orange-400/50 transition-all hover:scale-105 overflow-hidden">
                       <div className="absolute inset-0 bg-white/20 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
                       <span className="relative">Go to Dashboard</span>
                     </button>
@@ -114,10 +114,10 @@ export default function LandingPage() {
         </div>
 
         {/* Benefits Section */}
-        <div className="relative py-24 bg-linear-to-b from-black/80 to-slate-900/80">
+        <div className="relative py-24 bg-gradient-to-b from-black/80 to-slate-900/80">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-5xl font-bebas tracking-wider text-white sm:text-6xl drop-shadow-2xl uppercase bg-linear-to-r from-white to-orange-200 bg-clip-text text-transparent">
+              <h2 className="text-5xl font-bebas tracking-wider text-white sm:text-6xl drop-shadow-2xl uppercase bg-gradient-to-r from-white to-orange-200 bg-clip-text text-transparent">
                 {t.landing.benefits.title}
               </h2>
               <p className="mt-6 text-2xl text-white/90 drop-shadow-lg font-oswald">{t.landing.benefits.subtitle}</p>
@@ -125,9 +125,9 @@ export default function LandingPage() {
 
             <div className="grid gap-8 md:grid-cols-3">
               <div className="group relative rounded-2xl overflow-hidden transform hover:scale-105 transition-all duration-300">
-                <div className="absolute inset-0 bg-linear-to-br from-blue-600/30 to-blue-900/30 group-hover:from-blue-600/40 group-hover:to-blue-900/40 transition-all"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-600/30 to-blue-900/30 group-hover:from-blue-600/40 group-hover:to-blue-900/40 transition-all"></div>
                 <div className="relative backdrop-blur-md bg-black/30 p-10 border-2 border-blue-400/30 h-full">
-                  <div className="flex h-16 w-16 items-center justify-center rounded-xl bg-linear-to-br from-blue-400 to-blue-600 border-2 border-white/30 shadow-2xl mb-6">
+                  <div className="flex h-16 w-16 items-center justify-center rounded-xl bg-gradient-to-br from-blue-400 to-blue-600 border-2 border-white/30 shadow-2xl mb-6">
                     <Brain className="h-8 w-8 text-white drop-shadow-lg" />
                   </div>
                   <div className="border-b-2 border-blue-400/40 pb-4 mb-4">
@@ -140,9 +140,9 @@ export default function LandingPage() {
               </div>
 
               <div className="group relative rounded-2xl overflow-hidden transform hover:scale-105 transition-all duration-300">
-                <div className="absolute inset-0 bg-linear-to-br from-green-600/30 to-emerald-900/30 group-hover:from-green-600/40 group-hover:to-emerald-900/40 transition-all"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-green-600/30 to-emerald-900/30 group-hover:from-green-600/40 group-hover:to-emerald-900/40 transition-all"></div>
                 <div className="relative backdrop-blur-md bg-black/30 p-10 border-2 border-green-400/30 h-full">
-                  <div className="flex h-16 w-16 items-center justify-center rounded-xl bg-linear-to-br from-green-400 to-emerald-600 border-2 border-white/30 shadow-2xl mb-6">
+                  <div className="flex h-16 w-16 items-center justify-center rounded-xl bg-gradient-to-br from-green-400 to-emerald-600 border-2 border-white/30 shadow-2xl mb-6">
                     <BarChart3 className="h-8 w-8 text-white drop-shadow-lg" />
                   </div>
                   <div className="border-b-2 border-green-400/40 pb-4 mb-4">
@@ -155,9 +155,9 @@ export default function LandingPage() {
               </div>
 
               <div className="group relative rounded-2xl overflow-hidden transform hover:scale-105 transition-all duration-300">
-                <div className="absolute inset-0 bg-linear-to-br from-orange-600/30 to-red-800/30 group-hover:from-orange-600/40 group-hover:to-red-800/40 transition-all"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-orange-600/30 to-red-800/30 group-hover:from-orange-600/40 group-hover:to-red-800/40 transition-all"></div>
                 <div className="relative backdrop-blur-md bg-black/30 p-10 border-2 border-orange-400/30 h-full">
-                  <div className="flex h-16 w-16 items-center justify-center rounded-xl bg-linear-to-br from-orange-400 to-red-600 border-2 border-white/30 shadow-2xl mb-6">
+                  <div className="flex h-16 w-16 items-center justify-center rounded-xl bg-gradient-to-br from-orange-400 to-red-600 border-2 border-white/30 shadow-2xl mb-6">
                     <Heart className="h-8 w-8 text-white drop-shadow-lg" />
                   </div>
                   <div className="border-b-2 border-orange-400/40 pb-4 mb-4">
@@ -176,15 +176,15 @@ export default function LandingPage() {
         <div className="relative py-24">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-5xl font-bebas tracking-wider text-white sm:text-6xl drop-shadow-2xl uppercase bg-linear-to-r from-orange-400 to-red-500 bg-clip-text text-transparent">
+              <h2 className="text-5xl font-bebas tracking-wider text-white sm:text-6xl drop-shadow-2xl uppercase bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent">
                 {t.landing.howItWorks.title}
               </h2>
             </div>
 
             <div className="grid gap-12 md:grid-cols-3">
               <div className="relative text-center group">
-                <div className="absolute inset-0 bg-linear-to-br from-orange-500/20 to-red-500/20 blur-2xl group-hover:blur-3xl transition-all"></div>
-                <div className="relative mx-auto flex h-24 w-24 items-center justify-center rounded-2xl bg-linear-to-br from-orange-500 to-red-600 border-4 border-orange-300/50 shadow-2xl transform group-hover:scale-110 transition-transform">
+                <div className="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-red-500/20 blur-2xl group-hover:blur-3xl transition-all"></div>
+                <div className="relative mx-auto flex h-24 w-24 items-center justify-center rounded-2xl bg-gradient-to-br from-orange-500 to-red-600 border-4 border-orange-300/50 shadow-2xl transform group-hover:scale-110 transition-transform">
                   <span className="text-5xl font-bebas text-white drop-shadow-2xl">1</span>
                 </div>
                 <h3 className="mt-6 text-2xl font-bebas tracking-wider text-white drop-shadow-lg uppercase">
@@ -194,8 +194,8 @@ export default function LandingPage() {
               </div>
 
               <div className="relative text-center group">
-                <div className="absolute inset-0 bg-linear-to-br from-blue-500/20 to-indigo-500/20 blur-2xl group-hover:blur-3xl transition-all"></div>
-                <div className="relative mx-auto flex h-24 w-24 items-center justify-center rounded-2xl bg-linear-to-br from-blue-500 to-indigo-600 border-4 border-blue-300/50 shadow-2xl transform group-hover:scale-110 transition-transform">
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-indigo-500/20 blur-2xl group-hover:blur-3xl transition-all"></div>
+                <div className="relative mx-auto flex h-24 w-24 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-indigo-600 border-4 border-blue-300/50 shadow-2xl transform group-hover:scale-110 transition-transform">
                   <span className="text-5xl font-bebas text-white drop-shadow-2xl">2</span>
                 </div>
                 <h3 className="mt-6 text-2xl font-bebas tracking-wider text-white drop-shadow-lg uppercase">
@@ -205,8 +205,8 @@ export default function LandingPage() {
               </div>
 
               <div className="relative text-center group">
-                <div className="absolute inset-0 bg-linear-to-br from-green-500/20 to-emerald-500/20 blur-2xl group-hover:blur-3xl transition-all"></div>
-                <div className="relative mx-auto flex h-24 w-24 items-center justify-center rounded-2xl bg-linear-to-br from-green-500 to-emerald-600 border-4 border-green-300/50 shadow-2xl transform group-hover:scale-110 transition-transform">
+                <div className="absolute inset-0 bg-gradient-to-br from-green-500/20 to-emerald-500/20 blur-2xl group-hover:blur-3xl transition-all"></div>
+                <div className="relative mx-auto flex h-24 w-24 items-center justify-center rounded-2xl bg-gradient-to-br from-green-500 to-emerald-600 border-4 border-green-300/50 shadow-2xl transform group-hover:scale-110 transition-transform">
                   <span className="text-5xl font-bebas text-white drop-shadow-2xl">3</span>
                 </div>
                 <h3 className="mt-6 text-2xl font-bebas tracking-wider text-white drop-shadow-lg uppercase">
@@ -219,17 +219,17 @@ export default function LandingPage() {
         </div>
 
         {/* Pricing */}
-        <div className="relative py-24 bg-linear-to-b from-slate-900/80 to-black/80">
+        <div className="relative py-24 bg-gradient-to-b from-slate-900/80 to-black/80">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-5xl font-bebas tracking-wider text-white sm:text-6xl drop-shadow-2xl uppercase bg-linear-to-r from-white to-blue-200 bg-clip-text text-transparent">
+              <h2 className="text-5xl font-bebas tracking-wider text-white sm:text-6xl drop-shadow-2xl uppercase bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent">
                 {t.landing.pricing.title}
               </h2>
             </div>
 
             <div className="grid gap-8 md:grid-cols-2 lg:mx-auto lg:max-w-5xl">
               <div className="group relative rounded-2xl overflow-hidden transform hover:scale-105 transition-all duration-300">
-                <div className="absolute inset-0 bg-linear-to-br from-slate-700/30 to-slate-900/30 group-hover:from-slate-700/40 group-hover:to-slate-900/40 transition-all"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-slate-700/30 to-slate-900/30 group-hover:from-slate-700/40 group-hover:to-slate-900/40 transition-all"></div>
                 <div className="relative backdrop-blur-md bg-black/30 border-2 border-slate-400/30 p-10 h-full">
                   <div className="border-b-2 border-slate-400/40 pb-6 mb-6">
                     <h3 className="text-3xl font-bebas tracking-wider text-slate-200 drop-shadow-lg uppercase font-bold">{t.landing.pricing.free.title}</h3>
@@ -264,9 +264,9 @@ export default function LandingPage() {
               </div>
 
               <div className="group relative rounded-2xl overflow-hidden transform hover:scale-105 transition-all duration-300">
-                <div className="absolute inset-0 bg-linear-to-br from-blue-600/30 to-indigo-800/30 group-hover:from-blue-600/40 group-hover:to-indigo-800/40 transition-all"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-600/30 to-indigo-800/30 group-hover:from-blue-600/40 group-hover:to-indigo-800/40 transition-all"></div>
                 <div className="relative backdrop-blur-md bg-black/30 border-2 border-blue-400/40 p-10 h-full">
-                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 rounded-full bg-linear-to-r from-blue-500 to-indigo-600 px-6 py-2 text-sm font-bebas tracking-wider text-white border-2 border-blue-300/50 shadow-2xl">
+                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600 px-6 py-2 text-sm font-bebas tracking-wider text-white border-2 border-blue-300/50 shadow-2xl">
                     {t.landing.pricing.pro.badge}
                   </div>
                   <div className="border-b-2 border-blue-400/40 pb-6 mb-6">
